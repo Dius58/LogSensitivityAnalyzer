@@ -29,9 +29,15 @@ def run_scan(folder):
                                 print(f"[!] {label} Bulundu -> Dosya: {file}, Satir: {i}")
                                 found += 1
     print(f"\nTarama bitti. Toplam {found} bulgu.")
-
 if __name__ == "__main__":
+    # Önce ekranı temizle (Hocanın ismini görmemesi için)
+    os.system('cls' if os.name == 'nt' else 'clear')
+    
     print("--- Log Sensitivity Analyzer | Geliştirici: Yiğit Arslan ---")
+    
     if self_test():
-        target = input("Taranacak klasör (Mevcut dizin için '.'): ")
+        # Input alırken başına bir boşluk bırakalım ki yazdığın 'tests' karışmasın
+        target = input("\n>>> Taranacak klasor yolunu girin (Ornegin: tests): ")
         run_scan(target)
+    else:
+        print("Kritik Hata: Self-test basarisiz!")
