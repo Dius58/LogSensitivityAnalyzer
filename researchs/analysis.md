@@ -1,6 +1,10 @@
-# Hassas Veri Tespiti Araştırması
-Bu projede kullanılan tespit yöntemleri siber güvenlik standartları (OWASP vb.) baz alınarak araştırılmıştır.
+# Hassas Veri Tarama Teknikleri Araştırması
+Bu çalışmada, log dosyalarındaki veri sızıntılarını tespit etmek için en güvenilir yöntemler araştırılmıştır.
 
-- **Regex (Düzenli İfadeler):** Statik analiz yöntemleri arasında en hızlı ve etkili yöntem olduğu için tercih edilmiştir.
-- **Duyarlılık Seviyeleri:** "Password", "Secret", "Key" gibi anahtar kelimelerin yanındaki verilerin yakalanması için "Case-Insensitive" (büyük-küçük harf duyarsız) tarama mantığı kurgulanmıştır.
-- **Performans:** Büyük log dosyalarında bellek kullanımını minimize etmek için dosyalar satır satır okunacak şekilde planlanmıştır.
+### Regex Stratejisi
+Araştırmalar sonucunda, sadece anahtar kelime aramanın çok fazla "false positive" (hatalı pozisyon) verdiği görülmüştür. Bu nedenle:
+- `(?i)` bayrağı kullanılarak büyük/küçük harf duyarsızlığı sağlanmıştır.
+- `[\s:=]+` yapısı ile kelime ve değer arasındaki boşluk, eşittir veya iki nokta üst üste gibi farklı atama operatörleri kapsama alınmıştır.
+
+### Güvenlik Standartları
+Log yönetiminde kişisel verilerin korunması (KVKK/GDPR) kapsamında, logların periyodik olarak bu tarz araçlarla taranması gerektiği saptanmıştır.
