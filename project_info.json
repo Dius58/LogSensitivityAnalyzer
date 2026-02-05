@@ -1,0 +1,12 @@
+{
+  "projeAdi": "LogSensitivityAnalyzer",
+  "gelistirici": "Yiğit Arslan",
+  "kategori": "SecOps",
+  "versiyon": "1.0.0",
+  "aciklama": "Log dosyalarındaki güvenlik açıklarını ve hassas veri sızıntılarını tespit eder.",
+  "ozellikler": [
+    "Otomatik test modu",
+    "Regex tabanlı derin tarama",
+    "Windows uyumlu dosya gezgini"
+  ]
+}
