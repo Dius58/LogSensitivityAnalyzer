@@ -1,0 +1,7 @@
+[INFO] 2024-05-20 10:15:32 - Sistem baslatildi.
+[DEBUG] 2024-05-20 10:16:01 - Veritabani baglantisi kuruluyor...
+[ERROR] 2024-05-20 10:16:05 - Baglanti hatasi! Detay: user="admin", password="Yigit_Gizli_Sifre_123"
+[INFO] 2024-05-20 10:18:20 - Kullanici giris denemesi. IP: 192.168.1.12
+[WARNING] 2024-05-20 10:20:45 - Supheli API istegi algilandi. api_key=ak-test-V2NjYXJzaW40Mjk0
+[INFO] 2024-05-20 10:22:12 - Destek birimine mail gonderildi. Alici: destek@yigitarslan.com
+[DEBUG] 2024-05-20 10:25:00 - Oturum acma basarili. Token: Bearer eyJhbGciOiJIUzI1NiIsInR
